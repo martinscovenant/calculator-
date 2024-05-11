@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
 
 :root {
-  --clr-light: #37474f;
+  /* --clr-light: #37474f;
   --clr-med: #090a0a;
   --clr-dark: black;
-  --clr-dark-heavy: #121b1f;
+  --clr-dark-heavy: #121b1f; */
+
+    --clr-light: white;
+  --clr-med: #d7dfe2;
+  --clr-dark: #90a4ae;
+  --clr-dark-heavy: #546e7a;
 }
 
 .App {
