@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+
+:root {
+  --clr-light: #37474f;
+  --clr-med: #090a0a;
+  --clr-dark: black;
+  --clr-dark-heavy: #121b1f;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: var(--clr-dark);
+}
+
+.calculator {
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 5%;
+  padding: 2%;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.19), 0 6px 6px rgba(255, 255, 255, 0.23);
+}
+
+.result {
+  width: 97%;
+  margin-bottom: 5%;
+  padding: 1px;
+  font-size: 3em;
+  font-display: var(--clr-dark);
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  background: var(--clr-med);
+  box-shadow: -5px -5px 10px var(--clr-light), 5px 5px 10px var(--clr-dark),
+    inset -5px -5px 10px var(--clr-light), inset 5px 5px 10px var(--clr-dark);
+  font-family: sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-gap: 13px;
+}
+
+button {
+  padding: 10px;
+  color: aliceblue;
+  font-size: 3em;
+  border-radius: 5em;
+  border: none;
+  outline: none;
+  background: var(--clr-med);
+  box-shadow: -5px -5px 10px var(--clr-light), 5px 5px 10px var(--clr-dark),
+    inset -5px -5px 10px var(--clr-light), inset 5px 5px 10px var(--clr-dark);
+  font-family: sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+button:hover {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+@media screen and (max-width: 767px) {
+  .calculator {
+    width: 95%;
+    padding: 1%;
+  }
+  
+  .result {
+    font-size: 2em;
+  }
+  
+  button {
+    font-size: 1.5em;
+  }
+}
